@@ -7,6 +7,6 @@ RUN (cd /tmp && tar zxf pkg.tar.gz && mv solr-* /opt/solr)
 RUN rm -rf /tmp/*
 ADD run.sh /usr/local/bin/run
 RUN chmod +x /usr/local/bin/run
-
+ADD solr.tgz /opt/solr/example/solr/
 EXPOSE 8983
 CMD ["/usr/local/bin/run"]
