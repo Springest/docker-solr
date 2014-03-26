@@ -3,7 +3,7 @@
 Apache Solr 4.6.0
 
 * `docker build -t solr .`
-* `docker run solr`
+* `docker run -i -t -p 8983:8983 solr`
 
 Ports
 
